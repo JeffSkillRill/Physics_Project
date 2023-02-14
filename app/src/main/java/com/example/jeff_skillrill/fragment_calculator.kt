@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import kotlinx.android.synthetic.main.activity_splash_screen.splash_image
+import kotlinx.android.synthetic.main.fragment_calculator.coming_soon_txt
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,6 +21,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class fragment_calculator : Fragment() {
+    private lateinit var topanimation: Animation
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -27,6 +32,8 @@ class fragment_calculator : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+//        topanimation = AnimationUtils.loadAnimation(activity, R.anim.top_animation)
+//        coming_soon_txt.animation = topanimation
     }
 
     override fun onCreateView(
