@@ -56,4 +56,5 @@ class fragment_calculator : Fragment() {
                 }
             }
     }
+
 }
