@@ -5,463 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment_events">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/layout_era_1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/main_menu_m"
+                android:elevation="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/era_back_demo"
+                    android:scaleType="fitXY"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_era_2"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_menu_m"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/era_back_demo"
+                    android:scaleType="fitXY"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_era_3"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_menu_m"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/era_back_demo"
+                    android:scaleType="fitXY"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:fillViewport="true">-->
-
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="5dp">-->
-
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@+id/titleimage"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event1"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event1"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout2"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage2"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event2"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage2"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event2"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage2"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout3"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage3"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event3"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage3"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event3"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage3"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout4"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage4"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event4"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage4"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event4"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage4"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout5"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage5"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event5"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage5"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event5"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage5"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout6"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage6"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event6"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage6"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event6"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage6"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout7"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage7"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event7"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage7"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event7"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage7"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout8"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage8"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event8"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage8"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event8"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage8"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout9"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout8">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage9"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event9"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage9"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event9"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage9"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-<!--            &lt;!&ndash;//////////////&ndash;&gt;-->
-<!--            <RelativeLayout-->
-<!--                android:id="@+id/relativeLayout10"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:background="@drawable/main_menu_m"-->
-<!--                android:elevation="10dp"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/relativeLayout9">-->
-
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@id/titleimage10"-->
-<!--                    android:layout_width="80dp"-->
-<!--                    android:layout_height="80dp"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:adjustViewBounds="true"-->
-<!--                    android:scaleType="centerCrop"-->
-<!--                    android:src="@drawable/topic_demo" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/event10"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage10"-->
-<!--                    android:text="Topic"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="22sp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@+id/event10"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_toEndOf="@+id/titleimage10"-->
-<!--                    android:text="@string/lorem_demo_mini"-->
-<!--                    android:textSize="16sp" />-->
-
-
-<!--            </RelativeLayout>-->
-
-
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--    </ScrollView>-->
 
 </FrameLayout>

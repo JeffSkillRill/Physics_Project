@@ -1,3 +1,3 @@
 package com.example.jeff_skillrill
 
-data class Events(var titleImage: Int, var heading: String)
+data class Events(val image:Int, val name:String)
