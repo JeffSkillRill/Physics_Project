@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class EventAdapter(private var eventlist:ArrayList<Events>)
     :RecyclerView.Adapter<EventAdapter.EventViewHolder>()
 {
+    var onItemClick :((Events) -> Unit)? = null
     class EventViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
     {
         val imageView : ImageView = itemView.findViewById(R.id.topic_image)
@@ -30,5 +31,8 @@ class EventAdapter(private var eventlist:ArrayList<Events>)
         val event = eventlist[position]
         holder.imageView.setImageResource(event.image)
         holder.textView.text = event.name
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(event)
+        }
     }
 }
