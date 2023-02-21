@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.trendyol.bubblescrollbarlib.BubbleTextProvider
+import kotlinx.android.synthetic.main.activity_period1.bubble_scroll_ber
+import kotlinx.android.synthetic.main.activity_period1.recyclerView_period_1
 
 class period_1 : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -18,6 +21,7 @@ class period_1 : AppCompatActivity() {
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+
         eventList = ArrayList()
 
         eventList.add(Events(R.drawable.topic_demo, "Topic_1"))
@@ -30,6 +34,11 @@ class period_1 : AppCompatActivity() {
         eventAdapter = EventAdapter(eventList)
         recyclerView.adapter = eventAdapter
 
+        bubble_scroll_ber.attachToRecyclerView(recyclerView_period_1)
+        bubble_scroll_ber.bubbleTextProvider = BubbleTextProvider {
+            position -> StringBuilder(eventList[position].substring(0,1)).toString()
+        }
+
         eventAdapter.onItemClick = {
             val intent = Intent(this, Detailed_Activity_period_1::class.java)
             intent.putExtra("Event", it)
@@ -38,3 +47,5 @@ class period_1 : AppCompatActivity() {
 
     }
 }
+
+

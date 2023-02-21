@@ -19,6 +19,8 @@ data class Events(val image:Int, val name:String) : Parcelable {
         return 0
     }
 
+
+
     companion object CREATOR : Parcelable.Creator<Events> {
         override fun createFromParcel(parcel: Parcel): Events {
             return Events(parcel)
