@@ -26,18 +26,18 @@ class fragment_events : Fragment() {
         super.onViewCreated(itemView, savedInstanceState)
 
         layout_era_1.setOnClickListener {
-            val intent = Intent (activity, period_1::class.java)
-            activity?.startActivity(intent)
+            val intent1 = Intent (activity, period_1::class.java)
+            activity?.startActivity(intent1)
         }
 
         layout_era_2.setOnClickListener {
-            val intent = Intent (activity, period_2::class.java)
-            activity?.startActivity(intent)
+            val intent2 = Intent (activity, period_2::class.java)
+            activity?.startActivity(intent2)
         }
 
         layout_era_3.setOnClickListener {
-            val intent = Intent (activity, period_3::class.java)
-            activity?.startActivity(intent)
+            val intent3 = Intent (activity, period_3::class.java)
+            activity?.startActivity(intent3)
         }
     }
 
