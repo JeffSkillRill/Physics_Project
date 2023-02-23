@@ -5,5 +5,6 @@
     <string name="topic_demo">Topic</string>
     <string name="lorem_demo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum ac felis a accumsan. In mollis auctor lectus, quis vulputate turpis convallis ut. Proin vitae ante sed metus condimentum efficitur. Duis vel odio ut nisl interdum viverra. Sed posuere nisl at dolor gravida mattis. Phasellus sed nisi ac nisl tristique condimentum in eget enim. Sed commodo volutpat velit sit amet semper.</string>
     <string name="lorem_demo_mini">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum ac felis a accumsan. In mollis auctor lectus, quis vulputate turpis convallis ut.</string>
+    <string name="entering_sentence">Fizika Olamiga Xush Kelibsiz</string>
 
 </resources>

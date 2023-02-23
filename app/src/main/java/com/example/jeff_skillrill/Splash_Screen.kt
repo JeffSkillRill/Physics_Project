@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class Splash_Screen : AppCompatActivity() {
-    val SPLASH_SCREEN = 7000
+    val SPLASH_SCREEN = 5000
     private lateinit var topanimation: Animation
     private lateinit var bottomanimation: Animation
 

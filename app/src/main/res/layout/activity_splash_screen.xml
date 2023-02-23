@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".Splash_Screen">
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/splash_image"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/splash_screen_image"
+        android:src="@drawable/splash_screen_gif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,9 +20,11 @@
         android:id="@+id/splash_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WELCOME"
+        android:text="@string/entering_sentence"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/lobster_regular"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
