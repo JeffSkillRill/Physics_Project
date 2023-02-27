@@ -21,58 +21,62 @@
 
             <LinearLayout
                 android:id="@+id/layout_era_1"
-                android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"
                 android:background="@drawable/main_menu_m"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/era_back_demo"
+                    android:contentDescription="TODO"
                     android:scaleType="fitXY"
-                    android:contentDescription="TODO" />
+                    android:src="@drawable/period_back" />
+
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/layout_era_2"
-                android:layout_margin="10dp"
-                android:background="@drawable/main_menu_m"
-                android:elevation="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:background="@drawable/main_menu_m"
+                android:elevation="10dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/era_back_demo"
+                    android:contentDescription="TODO"
                     android:scaleType="fitXY"
-                    android:contentDescription="TODO" />
+                    android:src="@drawable/period_back" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/layout_era_3"
-                android:layout_margin="10dp"
-                android:background="@drawable/main_menu_m"
-                android:elevation="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:background="@drawable/main_menu_m"
+                android:elevation="10dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/era_back_demo"
+                    android:contentDescription="TODO"
                     android:scaleType="fitXY"
-                    android:contentDescription="TODO" />
+                    android:src="@drawable/period_back" />
             </LinearLayout>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </FrameLayout>

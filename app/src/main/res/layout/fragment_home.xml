@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_home"
     tools:context=".Home">
 
     <ScrollView
@@ -90,17 +91,19 @@
                                 android:gravity="center_horizontal"
                                 android:orientation="vertical">
 
-                                <de.hdodenhof.circleimageview.CircleImageView
+                                <ImageView
                                     android:layout_width="100dp"
                                     android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:src="@drawable/topic_demo" />
+                                    android:src="@drawable/mechanics" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="@string/topic_demo"
+                                    android:fontFamily="@font/golostext_regular"
+                                    android:text="Mexanika"
+                                    android:textColor="@color/black"
                                     android:textSize="20sp" />
                             </LinearLayout>
 
@@ -124,13 +127,15 @@
                                     android:layout_width="100dp"
                                     android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:src="@drawable/topic_demo" />
+                                    android:src="@drawable/waves" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="@string/topic_demo"
+                                    android:fontFamily="@font/golostext_regular"
+                                    android:text="Tebranishlar"
+                                    android:textColor="@color/black"
                                     android:textSize="20sp" />
                             </LinearLayout>
 
@@ -154,13 +159,15 @@
                                     android:layout_width="100dp"
                                     android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:src="@drawable/topic_demo" />
+                                    android:src="@drawable/optics" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="@string/topic_demo"
+                                    android:fontFamily="@font/golostext_regular"
+                                    android:text="Optika"
+                                    android:textColor="@color/black"
                                     android:textSize="20sp" />
                             </LinearLayout>
 
@@ -180,17 +187,19 @@
                                 android:gravity="center_horizontal"
                                 android:orientation="vertical">
 
-                                <de.hdodenhof.circleimageview.CircleImageView
+                                <ImageView
                                     android:layout_width="100dp"
                                     android:layout_height="100dp"
                                     android:layout_marginTop="10dp"
-                                    android:src="@drawable/topic_demo" />
+                                    android:src="@drawable/heat" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
-                                    android:text="@string/topic_demo"
+                                    android:fontFamily="@font/golostext_regular"
+                                    android:text="Issiqliq"
+                                    android:textColor="@color/black"
                                     android:textSize="20sp" />
                             </LinearLayout>
 
@@ -218,7 +227,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="Today's Person"
+                    android:text="Kun Olimi"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -243,7 +252,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Albert Einstein"
+                        android:text="Albert Eynshteyn"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -255,7 +264,7 @@
                         android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="@string/lorem_demo"
+                        android:text="@string/about_person"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="italic"
@@ -286,7 +295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="Daily Definition"
+                    android:text="Kun Mavzusi"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -303,7 +312,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:text="Wind"
+                        android:text="Yorug'lik"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -314,8 +323,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:text="@string/lorem_demo"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        android:text="@string/daily_def"
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         android:textStyle="italic"
@@ -329,7 +339,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout_basic_physics_cal"
+                android:id="@+id/layout_basic_cal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/main_menu_m"
@@ -352,10 +362,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Pyhsics Formula Calculator"
+                    android:layout_marginStart="10dp"
+                    android:text="Matematik Kalkulyator"
                     android:textColor="#FF9800"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>

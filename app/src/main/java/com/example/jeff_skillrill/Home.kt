@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import kotlinx.android.synthetic.main.fragment_events.layout_era_1
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -22,8 +23,13 @@ class Home : Fragment() {
     }
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
-        val animation = AnimationUtils.loadAnimation(activity,R.anim.text_intoduction_anim)
-        introduction_text.startAnimation(animation)
+            val animation = AnimationUtils.loadAnimation(activity,R.anim.text_intoduction_anim)
+            introduction_text.startAnimation(animation)
+        layout_basic_cal.setOnClickListener {
+            val intent1 = Intent (activity, Calculator::class.java)
+            activity?.startActivity(intent1)
+        }
+
 
     }
 

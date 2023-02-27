@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="darkGreyColour">#a9a9a9</color>
     <color name="underline">#D8D6D6</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="bg">#FF17171C</color>
+
+    <color name="darkk_button">#FF2E2F38</color>
+    <color name="dark_button">#FF3D00</color>
+    <color name="blue">#FF5B9BD5</color>
 </resources>
