@@ -65,61 +65,186 @@ class period_1 : AppCompatActivity() {
     private fun addDataToList() {
         mList.add(
             Event_one_data(
-                "Java",
+                "1543 - Andries van Wesel,",
                 R.drawable.topic_demo,
-                "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible."
+                "Andreas Vesalius nomi bilan mashhur bo'lib, inson tanasining tuzilishi haqida o'zining etti kitobini tugatdi. Bu anatomiya bo'yicha inson tanasining o'rganishga asoslangan birinchi ishdir"
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1543 - Nikolay Kopernik",
+                R.drawable.topic_demo,
+                "Nikolay Kopernikning \"Osmon jismlarining inqiloblari haqida\" kitobi nashr etildi. Bu astronomiyaga oid birinchi ish bo‘lib, sayyoralarning, jumladan, Yerning Quyosh atrofidagi harakati uchun analitik asos yaratadi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1556 - Shoh Akbar",
+                R.drawable.topic_demo,
+                "Akbar Shimoliy Hindiston, Pokiston va Afg'onistondagi Mug'allar imperiyasining hukmdori bo'ladi. U diniy bag'rikenglikni ta'minlash orqali Hindistonda katta birlikni o'rnatadi va uni dunyoning buyuk kuchlaridan biriga aylantiradi."
             )
         )
         mList.add(
             Event_one_data(
-                "Kotlin",
+                "1564 - Buyuk davr boshlanishi",
                 R.drawable.topic_demo,
-                "Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise."
+                "Ingliz yozuvchilari Kristofer Marlo va Uilyam Shekspir tug'ilgan."
             )
         )
         mList.add(
             Event_one_data(
-                "HTML",
+                "1588 - Qirolicha Yelizaveta I",
                 R.drawable.topic_demo,
-                "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser."
+                "Angliya qirolichasi Yelizaveta I ingliz flotini ispan Armadasining bosqinini qaytarish uchun yuboradi. Ingliz dengiz flotining muvaffaqiyati Buyuk Britaniyaning yirik dengiz kuchlari maqomining boshlanishini ko'rsatadi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1592 - Galileo Galiley",
+                R.drawable.topic_demo,
+                "Galileo Galiley Padua universitetining matematika professori etib tayinlandi. U erda bo'lganida u jismlarning harakatlari bo'yicha tajribalar o'tkazadi."
             )
         )
         mList.add(
             Event_one_data(
-                "Python",
+                "1603 - Kabuki Teatri",
                 R.drawable.topic_demo,
-                "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation."
+                "Kabuki teatri Yaponiyada keng shuhrat qozondi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1605 - Don Kixot",
+                R.drawable.topic_demo,
+                "Migel de Servantesning \"Don Kixot\" asarining birinchi qismi nashr etildi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1608 - Teleskop",
+                R.drawable.topic_demo,
+                "Birinchi teleskoplar Gollandiyada qurilgan. Galiley ushbu asboblarni model sifatida ishlatib, keyingi yili o'zining birinchi teleskopini quradi"
             )
         )
         mList.add(
             Event_one_data(
-                "C++",
+                "1609 - Koinotga birinchi qadam",
                 R.drawable.topic_demo,
-                "C++ is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or C with Classes."
+                "Yoxannes Keplerning \"Yangi astronomiya\" kitobi nashr etildi. Unda Kepler Mars orbitasi aylana emas, balki elliptik ekanligini ko‘rsatadi."
+
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1637 - Rene Dekart",
+                R.drawable.topic_demo,
+                "Rene Dekartning \"Usul to'g'risida\" kitobi nashr etildi. Dekartning ratsionalizm falsafasiga ko'ra, tabiat qonunlarini aql bilan xulosa qilish mumkin."
+
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1644 - Xitoy",
+                R.drawable.topic_demo,
+                "Xitoyda Ch'ing yoki Manchu sulolasi o'rnatildi. Xitoy dunyodagi eng gullab-yashnagan davlatga aylanadi, keyin 1911 yilda Ch'ing sulolasi Xitoy Respublikasi bilan almashtirilgunga qadar tanazzulga yuz tutadi."
+
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1655 - Yan Vermeer",
+                R.drawable.topic_demo,
+                "Gollandiyalik rassom Yan Vermeerning birinchi rasmlari aynan shu davrda yaratilgan. Vermeerning rasmlari kundalik vaziyatlarda o'rta va ishchi sinf odamlarini tasvirlaydi."
 
             )
         )
         mList.add(
             Event_one_data(
-                "Swift",
+                "1669 - Niklaus Steno",
                 R.drawable.topic_demo,
-                "Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community."
+                "Daniyalik geolog Niklaus Steno kristallarning tuzilishini to'g'ri aniqlaydi va fotoalbomlarni organik qoldiqlar sifatida aniqlaydi."
+
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1678 - Kristian Gyuygens",
+                R.drawable.topic_demo,
+                "Kristian Gyuygens o'zining \"Nur to'g'risida\" risolasining asosiy qismini yakunlaydi, unda u bugungi kunda Gyuygens printsipi sifatida tanilgan ikkilamchi to'lqinlar modelini taqdim etadi. Tugallangan kitob 12 yildan keyin nashr etiladi"
+
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1687 - Isaak Nyutonning",
+                R.drawable.topic_demo,
+                "Isaak Nyutonning \"Tabiiy falsafaning matematik asoslari\" asari nashr etildi. Ushbu keng qamrovli ishida Nyuton mexanikaning yagona modelini muntazam ravishda taqdim etadi."
             )
         )
         mList.add(
             Event_one_data(
-                "JavaScript",
+                "1698 - Ashanti imperiyasi",
                 R.drawable.topic_demo,
-                "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries."
+                "Afrika qirolliklarining oxirgisi bo'lgan Ashanti imperiyasi hozirgi Gana hududida paydo bo'ladi. Ashantining kuchli markazlashgan hukumati va samarali byurokratiyasi ularga mintaqani qariyb ikki asr davomida nazorat qilish imkonini beradi."
             )
         )
         mList.add(
             Event_one_data(
-                "C#",
+                "1712 - Tomas Nyukomen",
                 R.drawable.topic_demo,
-                "C# is a general-purpose, high-level multi-paradigm programming language. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines."
+                "Tomas Nyukomen birinchi amaliy bug' mashinasini ixtiro qildi. 50 yildan ortiq vaqt o'tgach, Jeyms Vatt Newcomen dvigatelini sezilarli darajada yaxshilaydi."
             )
         )
+        mList.add(
+            Event_one_data(
+                "1715 - Ts'ao Xsueh-ch'in",
+                R.drawable.topic_demo,
+                "Xitoy yozuvchisi Ts'ao Xsueh-ch'in tug'ilgan. Unga va boshqa yozuvchiga tegishli \"Qizil palataning orzusi\" kitobi keng tarqalgan\n" + "bugungi kunda eng buyuk xitoy romani sifatida qabul qilinadi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1721 - Iogann Sebastyan Bax",
+                R.drawable.topic_demo,
+                "Iogann Sebastyan Bax oltita Brandenburg kontsertini yakunlaydi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1735 - Jon Xarrison",
+                R.drawable.topic_demo,
+                "Jon Xarrison navigatorlarga kemaning uzunligini aniq aniqlash imkonini beradigan to'rtta xronometrdan birinchisini quradi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1738 - Nodirshoh",
+                R.drawable.topic_demo,
+                "Nodirshoh boshchiligida Mo‘g‘ullar imperiyasi tanazzul bosqichiga kirgach, Fors imperiyasi Hindistonga tarqaladi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1738 - Daniel Bernoulli",
+                R.drawable.topic_demo,
+                "Daniel Bernoullining suyuqliklarning mexanik harakati bo'yicha tadqiqotlarini o'z ichiga olgan \"Gidrodinamika\" nashr etildi."
+            )
+        )
+
+
+
+
+
     }
 }
 
