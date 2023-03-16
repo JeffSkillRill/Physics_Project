@@ -28,4 +28,6 @@
     <string name="dot">.</string>
     <string name="zero">0</string>
     <string name="equals">=</string>
+    <string name="about_person_expanded">\n Albert Eynshteyn (1879 - 1955) kelib chiqishi nemis bo\'lgan nazariy fizik va 20-asrning eng dolzarb olimlaridan biri edi. U zamonaviy fizika taraqqiyotining eng muhim asoslaridan biri bo\'lgan nisbiylik nazariyasini ishlab chiqdi. 1921 yilda u fotoelektr qonunini kashf etgani uchun fizika bo\'yicha Nobel mukofotiga sazovor bo\'ldi. Eynshteynning fanga, xususan, fizikaga qo\'shgan hissasi uni o\'z davrining eng taniqli odamlaridan biriga aylantirdi. \n\n
+        Eynshteynning eng mashhur ishi energiya va massa o\'rtasidagi tenglik edi: VA=mc2, dunyodagi eng taniqli tenglamalardan biri. U 1905 yilda, Bernda yashab yurganida, ushbu formulaga keldi. Keyinchalik, 1917 yilda Eynshteyn yorug\'likning xususiyatlarini o\'rganib chiqdi, ushbu tadqiqotlarda u o\'zining fotoelektr qonuni asoslarini topdi. Keyin u o\'zining umumiy nazariyasini butun koinotning tuzilishi modeliga tatbiq etdi</string>
 </resources>

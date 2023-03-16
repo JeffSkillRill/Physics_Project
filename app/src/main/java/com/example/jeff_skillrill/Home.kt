@@ -28,6 +28,8 @@ class Home : Fragment() {
         layout_basic_cal.setOnClickListener {
             val intent1 = Intent (activity, Calculator::class.java)
             activity?.startActivity(intent1)
+            val personintent = Intent(activity, person_daily::class.java)
+            activity?.startActivity(personintent)
         }
 
 

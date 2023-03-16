@@ -240,7 +240,58 @@ class period_1 : AppCompatActivity() {
                 "Daniel Bernoullining suyuqliklarning mexanik harakati bo'yicha tadqiqotlarini o'z ichiga olgan \"Gidrodinamika\" nashr etildi."
             )
         )
+        mList.add(
+            Event_one_data(
+                    "1747 - Mixail V. Lomonosov",
+                R.drawable.topic_demo,
+                "Issiqlik suyuqlikdir, degan ma'qullangan g'oyadan farqli o'laroq, rus kimyogari Mixail V. Lomonosov o'zining issiqlik harakat natijasidir degan gipotezasini e'lon qiladi. Bir necha yil o'tgach, Lomonosov massa va energiyaning saqlanish qonunlarini ishlab chiqdi"
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1752 - Benjamin Franklin",
+                R.drawable.topic_demo,
+                "Benjamin Franklin chaqmoqning elektr zaryadidan iborat ekanligini ko'rsatadigan xavfli \"kite experimen\" ni amalga oshiradi. U elektrni musbat va manfiy zaryadga ega deb ta'riflab, asr boshida o'tkazilgan elektr tokining birinchi tadqiqotlariga asoslanadi."
+            )
+        )
 
+        mList.add(
+            Event_one_data(
+                "1756 - Etti yillik urush",
+                R.drawable.topic_demo,
+                "Etti yillik urush boshlanadi. Britaniyalik general Jeyms Vulf 1758 yilda Kanadadagi Fort-Luisburg shahrini egallashga rahbarlik qiladi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1770 - Antoine Laurent Lavoisier",
+                R.drawable.topic_demo,
+                "Antoine Laurent Lavoisier kimyoviy reaktsiyalar, xususan, oksidlanish va yonish bo'yicha tadqiqotlarini boshlaydi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1772 - Uilyam Xerschel",
+                R.drawable.topic_demo,
+                "Astronom Uilyam Xerschelning singlisi Karolin Xerschel Angliyadagi ukasi bilan birga keladi. U o'sha davrning eng to'liq yulduzlar katalogini tuzadi va bizning galaktikamizda bir nechta tumanliklarni - porlayotgan gaz hududlarini topadi."
+            )
+        )
+
+        mList.add(
+            Event_one_data(
+                "1775 - Amerika",
+                R.drawable.topic_demo,
+                "Amerika inqilobi boshlanadi."
+            )
+        )
+        mList.add(
+            Event_one_data(
+                "1785 - Charlz Augustin de Coulomb",
+                R.drawable.topic_demo,
+                "Charlz Augustin de Coulomb elektr kuchi uchun teskari kvadrat qonunini muntazam va qat'iy isbotlaydigan tajribalar natijalarini nashr etadi. Qonun Daniel Bernulli, Jozef Pristli va Genri Kavendish kabi boshqa olimlar tomonidan 30 yildan ortiq vaqt davomida taklif qilingan."
+            )
+        )
 
 
 
